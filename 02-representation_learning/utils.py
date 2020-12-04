@@ -1,3 +1,5 @@
+
+
 def load_mnist(is_train=True, flatten=True):
     from torchvision import datasets, transforms
 

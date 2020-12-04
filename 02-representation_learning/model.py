@@ -6,7 +6,7 @@ class Autoencoder(nn.Module):
     def __init__(self, btl_size=2):
         self.btl_size = btl_size
         
-        super().__init__()
+        super(Autoencoder, self).__init__()
         
         self.encoder = nn.Sequential(
             nn.Linear(28 * 28, 500),

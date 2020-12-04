@@ -42,6 +42,7 @@ class Trainer():
             total_loss += float(loss_i)
 
         return total_loss / len(x)
+    
 
     def _validate(self, x, y, config):
         # Turn evaluation mode on.
@@ -66,6 +67,7 @@ class Trainer():
                 total_loss += float(loss_i)
 
             return total_loss / len(x)
+
 
     def train(self, train_data, valid_data, config):
         lowest_loss = np.inf
