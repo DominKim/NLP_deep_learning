@@ -48,11 +48,9 @@ def  Image_get(path, transform):
     image = torch.stack(lst)
     pkl_file = open("C:/빅데이터/유튜브_썸네일/youtube_thumnail.pkl", "rb")
     pkl_file = pickle.load(pkl_file)
-    labels = pkl_file["vide_watch"].values
+    labels = pkl_file["watch/sub"].values
     labels = torch.tensor(labels)
     return image, labels
-
-
 
 def get_loaders(config):
     path = ["C:/projects/myproject/cnn/train/" + str(i) + ".jpg" for i in range(6000)]
@@ -86,7 +84,7 @@ def get_loaders(config):
     valid_loader = DataLoader(
         dataset=Img_Dataset(valid_x, valid_y),
         batch_size=config.batch_size,
-        shuffle=True,
+        shuffle=False,
     )
 
     return train_loader, valid_loader

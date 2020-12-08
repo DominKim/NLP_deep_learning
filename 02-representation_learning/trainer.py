@@ -81,6 +81,12 @@ class Trainer():
             if valid_loss <= lowest_loss:
                 lowest_loss = valid_loss
                 best_model = deepcopy(self.model.state_dict())
+                lowest_epoch = epoch_index
+            else:
+                if config.early_stop > 0 and lowest_epoch + config.early_stop < epoch_index + 1:
+                    print("There is no improvement during last %d epochs." % config.early_stop)
+                    break
+            print("The best validation loss from epoch %d: %.4e" % (lowest_epoch + 1, lowest_loss))
 
             print("Epoch(%d/%d): train_loss=%.4e  valid_loss=%.4e  lowest_loss=%.4e" % (
                 epoch_index + 1,

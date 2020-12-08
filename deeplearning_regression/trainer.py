@@ -39,7 +39,7 @@ class Trainer():
             
             if config.verbose >= 2:
                 print("Train Iteraion(%d/%d) : loss : %.4e" % (
-                    i + 1, 6000, loss_i))
+                    i + 1, len(train_loader) , loss_i))
                 
             total_loss += float(loss_i)
             
@@ -59,7 +59,7 @@ class Trainer():
                 
                 if config.verbose >= 2:
                     print("Valid Iteraion(%d/%d) : loss: %.4e" % (
-                        i + 1, 6000, loss_i))
+                        i + 1, len(valid_loader) , loss_i))
                 total_loss += float(loss_i)
                 
             return total_loss / 6000
@@ -76,10 +76,16 @@ class Trainer():
             if valid_loss <= lowest_loss:
                 lowest_loss = valid_loss
                 best_model = deepcopy(self.model.state_dict())
+                lowest_epoch = epoch
+            else:
+                if config.early_stop > 0 and lowest_epoch + config.early_stop < epoch + 1:
+                    print("There is no improvement during last %d epochs." % config.early_stop)
+                    break
                 
             print("Epoch(%d/%d): train_los: %.4e, valid_loss=%.4e, lowest_loss=%.4e" %(
-                epoch, config.n_epochs, train_loss, valid_loss, lowest_loss
+                epoch + 1, config.n_epochs, train_loss, valid_loss, lowest_loss
                 ))
+            
             
             
         self.model.load_state_dict(best_model)

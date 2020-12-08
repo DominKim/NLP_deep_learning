@@ -42,5 +42,5 @@ class Image_regression(nn.Module):
         out = self.layer(x)
         out = out.view(out.size(0), -1)
         out = self.fc(out)
-        
+        out = out.view(-1)
         return out
