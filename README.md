@@ -18,3 +18,5 @@ call_10_times(print_hello)
 - filter(함수(=func), 리스트(=반복요소=iterables)) : 리스트의 요소를 함수에 넣고 리턴된 값이 True인 것으로 새로운 리스트를 구성해주는 함수
 
 - map(함수(=func), 리스트(=반복요소=iterables)) : 기존 리스트 기반으로 신규 리스트 만들 때 사용
+
+- transfomrs.ToTensor() : 0 ~ 1 사이로 스케일링
