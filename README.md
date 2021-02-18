@@ -1,5 +1,12 @@
 # NLP_deep_learning
-
+- colab 멈춤 방지
+``` html
+function ClickConnect(){
+    console.log("코랩 연결 끊김 방지"); 
+    document.querySelector("colab-toolbar-button#connect").click() 
+}
+setInterval(ClickConnect, 60 * 1000)
+```
 
 ## Python
 - 콜백함수(callback) : 내가 함수를 호출하는 것이 아니라 다른 함수에서 호출하는 
