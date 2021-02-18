@@ -1,6 +1,6 @@
 # NLP_deep_learning
 - colab 멈춤 방지
-``` html
+``` xml
 function ClickConnect(){
     console.log("코랩 연결 끊김 방지"); 
     document.querySelector("colab-toolbar-button#connect").click() 
