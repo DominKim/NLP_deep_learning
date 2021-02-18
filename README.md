@@ -27,3 +27,7 @@ call_10_times(print_hello)
 - map(함수(=func), 리스트(=반복요소=iterables)) : 기존 리스트 기반으로 신규 리스트 만들 때 사용
 
 - transfomrs.ToTensor() : 0 ~ 1 사이로 스케일링
+| train_loss | valid_loss |
+| ------------- | ------------- |
+| 1.4222e+04 | 1.2300e+04	|
+
