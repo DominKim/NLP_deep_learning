@@ -29,6 +29,7 @@ call_10_times(print_hello)
 - transfomrs.ToTensor() : 0 ~ 1 사이로 스케일링
 
 - transfer_learing_resnet34-use_trained_freeze_epoch20-batch8
+
 | train_loss | valid_loss | RMSE |
 | ------------- | ------------- | ------------- |
 | 1.4222e+04 | 1.2300e+04	| 105.03642 |
