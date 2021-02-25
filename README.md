@@ -28,14 +28,11 @@ call_10_times(print_hello)
 
 - transfomrs.ToTensor() : 0 ~ 1 사이로 스케일링
 
-- transfer_learing_resnet34-use_trained_freeze_epoch20-batch8
-- transfer_learing_densnet121-use_trained_freeze_epoch20-batch8
-- densenet121-use_trained-freeze-epoch20-batch8
-- densenet121-use_trained-freeze-epoch20-batch8_albumentation_normalize_hori_random_vertical_motion_gaussnoise
 
-| train_loss | valid_loss | RMSE |
-| ------------- | ------------- | ------------- |
-| 1.4222e+04 | 1.2300e+04	| 105.03642 |
-| 1.4091e+04 | 1.2923e+04   | 103.90428 |
-| 1.7068e+02 | 1.3420e+02   | 103.90428 |
-| 3.9548e+02 | 2.0384e+02   | 98.06773  |
+
+| Model | train_loss | valid_loss | RMSE |
+| -------------| ------------- | ------------- | ------------- |
+| transfer_learing_resnet34-use_trained_freeze_epoch20-batch8| 1.4222e+04 | 1.2300e+04	| 105.03642 |
+| transfer_learing_densnet121-use_trained_freeze_epoch20-batch8 | 1.4091e+04 | 1.2923e+04   | 103.90428 |
+| densenet121-use_trained-freeze-epoch20-batch8 | 1.7068e+02 | 1.3420e+02   | 103.90428 |
+| densenet121-use_trained-freeze-epoch20-batch8_albumentation_normalize_hori_random_vertical_motion_gaussnoise | 3.9548e+02 | 2.0384e+02   | 98.06773  |
