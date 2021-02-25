@@ -30,6 +30,8 @@ call_10_times(print_hello)
 
 - transfer_learing_resnet34-use_trained_freeze_epoch20-batch8
 - transfer_learing_densnet121-use_trained_freeze_epoch20-batch8
+- densenet121-use_trained-freeze-epoch20-batch8
+- densenet121-use_trained-freeze-epoch20-batch8_albumentation_normalize_hori_random_vertical_motion_gaussnoise
 
 | train_loss | valid_loss | RMSE |
 | ------------- | ------------- | ------------- |
