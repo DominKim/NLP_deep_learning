@@ -37,3 +37,4 @@ call_10_times(print_hello)
 | densenet121-use_trained-freeze-epoch20-batch8 | 1.7068e+02 | 1.3420e+02   | 103.90428 |
 | densenet121-use_trained-freeze-epoch20-batch8_albumentation_normalize_hori_random_vertical_motion_gaussnoise | 3.9548e+02 | 2.0384e+02   | 98.06773  |
 | densenet121-use_trained-freeze-epoch50-batch32_albumentation_normalize_hori_random_vertical_motion_gaussnoise.pth | 3.5934e+02 | 1.6615e+02 | 98.06773 |
+| densenet121-use_trained-freeze-epoch50-batch32_albumentation_hori_random_vertical_motion_gaussnoise.pth |  |  |  |
