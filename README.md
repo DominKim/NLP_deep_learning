@@ -39,6 +39,7 @@ call_10_times(print_hello)
 | densenet121-use_trained-freeze-epoch50-batch32_albumentation_normalize_hori_random_vertical_motion_gaussnoise.pth | 3.5934e+02 | 1.6615e+02 | 98.06773 |
 | densenet121-use_trained-freeze-epoch50-batch32_albumentation_hori_random_vertical_motion_gaussnoise.pth | 3.4917e+02 | 1.7434e+02 | 98.06773 |
 | keypoint-rcnn-e50-bs8-albu | - | - | 81.30218 |
-| mobilenetv2-e50-bs8-albu.pth | 4.8236e+02 | 2.7023e+02 | 98.06773 |
 | keypointrcnn_resnet50e10-bs8-newalbu.pth | - | - | 53.3512 |
 | keypointrcnn_resnet50e20-bs8-newalbu-swa-lr.pth | 2.8293 | - | 42.36044 |
+| keypointrcnn_resnet50e20-bs16-newalbu-swa-lr.pth | 2.6189 | - | 42.36044 |
+| keypointrcnn_resnet101e30-bs8-newalbu-swa-lr.pth | ~ | ~ | ~ |
