@@ -41,3 +41,4 @@ call_10_times(print_hello)
 | keypoint-rcnn-e50-bs8-albu | - | - | 81.30218 |
 | mobilenetv2-e50-bs8-albu.pth | 4.8236e+02 | 2.7023e+02 | 98.06773 |
 | keypointrcnn_resnet50e10-bs8-newalbu.pth | - | - | 53.3512 |
+| keypointrcnn_resnet50e20-bs8-newalbu-swa-lr.pth | 2.8293 | - | 42.36044 |
