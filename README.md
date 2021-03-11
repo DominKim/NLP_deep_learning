@@ -41,6 +41,6 @@ call_10_times(print_hello)
 | keypoint-rcnn-e50-bs8-albu | - | - | 81.30218 |
 | keypointrcnn_resnet50e10-bs8-newalbu.pth | - | - | 53.3512 |
 | keypointrcnn_resnet50e20-bs8-newalbu-swa-lr.pth | 2.8293 | - | 42.36044 |
-| keypointrcnn_resnet50e20-bs16-newalbu-swa-lr.pth | 2.6189 | - | 42.36044 |
+| keypointrcnn_resnet50e50-bs16-newalbu-swa-lr.pth | 2.6189 | - | 41.91284 |
 | keypointrcnn_resnet101e30-bs8-newalbu-swa-lr.pth | 2.15212 | ~  | 42.36044 |
 | keypointrcnn_resnet101e50-bs8-newalbu-swa-lr.pth | 2.6395 | 2.2781e+01  | 42.36044 |
