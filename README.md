@@ -45,3 +45,4 @@ call_10_times(print_hello)
 | keypointrcnn_resnet101e30-bs8-newalbu-swa-lr.pth | 2.15212 | ~  | 42.36044 |
 | keypointrcnn_resnet101e50-bs8-newalbu-swa-lr.pth | 2.6395 | 2.2781e+01  | 42.36044 |
 | keypointrcnn_resnet50e50-bs8-newalbu-swa-lr.pth | 2.6189 | - | 41.91284 |
+| keypointrcnn_resnet50e50-bs8-newalbu-res600-swa_lr5e-5.pth | | | |
